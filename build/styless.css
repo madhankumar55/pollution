@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d8f3f5;
+}
+
+/* Header Styling */
+.header {
+    background-color: #42ba96;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    height: 500px;
+}
+
+/* Aside Section */
+.aside {
+    background-color: #3ca166;
+    color: white;
+    flex: 1 1 20%;
+    min-width: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Article Section */
+.article {
+    background-color: #d89a51;
+    flex: 1 1 70%;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Image Boxes */
+.image {
+    background-color: #ffeb3b;
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 450px;
+    line-height: 100px;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .aside, .article {
+        flex: 1 1 100%;
+    }
+
+    .image {
+        width: 80px;
+        height: 80px;
+        line-height:80px;
+    }
+}
